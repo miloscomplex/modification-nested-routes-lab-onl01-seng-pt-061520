@@ -1,6 +1,8 @@
 <h1>Editing <%= @artist.name %></h1>
 
 <%= form_for @artist  do |f| %>
+  <%= song_id_field(@artist) %>
+  <br>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <br />
